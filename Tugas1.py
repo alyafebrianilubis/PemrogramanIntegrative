@@ -1,7 +1,15 @@
-x = int (input("masukka angka :"))
-if x > 0 :
-    print ("angka positif")
-elif x == (0) :
-    print ("angka 0")
-else :
-    print ("angka negatif")
+while True:
+  try:
+    x = float(input("Masukkan angka: "))
+    if x >= 0 or x < 0:
+        if x >= 0:
+            if x == 0:
+                print("nol")
+            else:
+                print("angka positif")
+        else:
+            print("angka negatif")
+        break
+    print("Masukkan angka")
+  except Exception as e:
+    print("Masukkan angka")
